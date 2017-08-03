@@ -243,7 +243,7 @@ angular.module(MODULE_NAME, [])
 
       // infinite-scroll-parent establishes this element's parent as the
       // container infinitely scrolled instead of the whole window.
-      if (attrs.infiniteScrollParent) {
+      if (attrs.infiniteScrollParent == true) {
         changeContainer(angular.element(elem.parent()));
       }
 
