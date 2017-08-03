@@ -241,9 +241,9 @@ angular.module(MODULE_NAME, [])
       scope.$watch('infiniteScrollContainer', handleInfiniteScrollContainer);
       handleInfiniteScrollContainer(scope.infiniteScrollContainer || []);
 
-      // infinite-scroll-parent establishes this element's parent as the
+      // infinite-scroll- establishes this element's parent as the
       // container infinitely scrolled instead of the whole window.
-      if (attrs.infiniteScrollParent == true) {
+      if (attrs.infiniteScrollParent === true || attrs.infiniteScrollParent === 'true') {
         changeContainer(angular.element(elem.parent()));
       }
 
